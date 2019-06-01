@@ -1,0 +1,28 @@
+EXERCISES
+
+1. In your own words highlight the differences in functionality and purposes Client-Side and Server-Side code serves in a full-stack web application.
+
+    Client-Side:
+        Front-end code that runs on the client's computer. Client-Side JS runs inside of a browser when a user is trying to access a web application. It is responsible for rendering the page and making requests to the server. It handles all interactions that take place between the app and the user. It has to use AJAX to make HTTP requests, and interfaces with HTML and the DOM.
+
+    Server-Side:
+        Back-end code that runs on the server. Server-Side JS runs on the server in a Node.js process. It receives the HTTP requests from the client-side JS, and returns the appropriate responses for the browser to render. Unlike client-side, it does not work with HTML or the DOM.
+
+
+2. What explains Nodes' rise in popularity and use? 
+    
+    Simplifying the number of languages used for a full application is a big plus, as well as the popularity of javascript. Node.js is also lightweight, performs well, and is easier to modify and maintain compared to traditionally built apps.
+
+What does "Isomorphic JavaScript programming" mean? 
+
+    Isomorphic JavaScript programming refers to JS applipcations that can run on both the client-side and the server-side, rather than using multiple languages to write all of the cohesive code for an application.
+
+Provide some real-world examples not listed in this checkpoint of companies using Node.js.
+
+    Walmart, Medium, Groupon
+
+
+
+3. Draw a diagram of a full-stack web application and its key components.
+
+    In github repo "node_js_diagram.jpg"
