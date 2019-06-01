@@ -1,0 +1,19 @@
+EXERCISES
+
+1. What is npm and what does it do?
+
+    npm is a package manager for JavaScript, and can be used in command line/terminal to install node packages. It also keeps track of the packages of files dependent on one another in an application.
+
+2. What kind of information does package.json hold?
+
+    It contains the metadata for the project, like name of the project, current versions, the author, the description, dependencies and scripts, repository information, etc.
+
+3. Google another Node package. Using the demo directory run npm install <theNameOfThePackage> --save. Check the contents of your package.json file to make sure that the dependencies list the name of the Node package.
+
+    Listed in package.json file:
+    
+    "dependencies": {
+        "express": "^4.17.1",
+        "skateboard": "^2.0.1"
+    }
+

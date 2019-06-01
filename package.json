@@ -1,0 +1,26 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "demo for node.js setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlharris516/bloc-js-server-side.git"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Meredith Harris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mlharris516/bloc-js-server-side/issues"
+  },
+  "homepage": "https://github.com/mlharris516/bloc-js-server-side#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "skateboard": "^2.0.1"
+  }
+}
