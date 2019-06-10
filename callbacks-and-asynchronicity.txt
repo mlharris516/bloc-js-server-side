@@ -1,0 +1,63 @@
+EXERCISES
+
+1. What is the difference between readdirSync and readdir?
+
+    readdirSync is a synchronous function that reads the contents of a directory, and no other events in the queue can run until it is finished.
+
+    readdir is an asynchronous function that has the same end goal as readdirSync, and reads the contents of a directory, but other processes can happen while it is running.
+
+
+
+2. What is the event loop and how does it handle asynchronous requests?
+
+    The event loop is the cycle of running multiple requests at one time from the event queue. The operating system will tell Node that an event is ready to be processed, and it will start running while other processes are in the loop. 
+
+
+3. Given the following code, specify whether the program is asynchronous and non-blocking or synchronous and blocking or synchronous and non-blocking.
+
+    const fs = require('fs');
+    const file = fs.readFileSync('foo.txt');
+    console.log(file.toString());
+
+4. Given the following code, specify whether the program is asynchronous and non-blocking or synchronous and blocking or synchronous and non-blocking.
+
+    const fs = require('fs');
+    fs.readFile('foo.txt', (err, file) => {
+        if (err) throw err;
+    console.log(file.toString());
+    });
+    console.log("test");
+
+5. In what order will the console.log statements execute in the code below?
+
+    const fs = require('fs');
+    fs.readFile('foo.txt', (err, file) => {
+    if (err) throw err;
+    console.log("A");
+    console.log("B")
+    });
+    console.log("C");
+
+6. setTimeout is a JavaScript function which calls a function after a set amount of milliseconds. Given the following code, explain in what sequence the functions will run and why.
+
+    function greeting() {
+    setTimeout(() => {
+    console.log("friend");
+    }, 100);
+    }
+
+    function hello(){
+    console.log("hello");
+    }
+
+    greeting();
+    hello();
+
+7. Create a function which utilizes a callback. Make sure to add console.log statements to understand when your callback function is called.
+
+    fs.writeFile(
+    path.join(__dirname, '/test', 'hello.txt'),
+    'Hello World!',
+    err => {
+        if (err) throw err,
+        console.log('File written to...');
