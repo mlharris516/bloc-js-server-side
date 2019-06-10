@@ -19,6 +19,9 @@ EXERCISES
     const file = fs.readFileSync('foo.txt');
     console.log(file.toString());
 
+    Synchronous & blocking
+    
+
 4. Given the following code, specify whether the program is asynchronous and non-blocking or synchronous and blocking or synchronous and non-blocking.
 
     const fs = require('fs');
@@ -27,6 +30,9 @@ EXERCISES
     console.log(file.toString());
     });
     console.log("test");
+
+    Asynchronous & non-blocking
+
 
 5. In what order will the console.log statements execute in the code below?
 
@@ -37,6 +43,11 @@ EXERCISES
     console.log("B")
     });
     console.log("C");
+
+
+    C
+    A 
+    B 
 
 6. setTimeout is a JavaScript function which calls a function after a set amount of milliseconds. Given the following code, explain in what sequence the functions will run and why.
 
@@ -52,6 +63,15 @@ EXERCISES
 
     greeting();
     hello();
+    
+
+    It will print to the console:
+
+        hello
+        friend
+
+    The setTimeout function provides enough time to pass, and is an asynchronous function, so the second function hello() will have already run by the time the time restraint is fulfilled.
+
 
 7. Create a function which utilizes a callback. Make sure to add console.log statements to understand when your callback function is called.
 
