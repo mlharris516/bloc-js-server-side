@@ -7,6 +7,7 @@ EXERCISES
 
 2. What are the main differences between the regular Chrome DevTools and the DevTools for Node?
 
+    Both have a console tab to work in, sources and memory. Node's profiler tab seems to be the same functionality as the performance tab of regular DevTools. Node has a connection tab that lists the port it is running on, which the regular DevTools doesn't have. Regular DevTools also has the elements, network, application, security and audits tabs for other uses that the Node tools do not.
 
 3. Using the built-in Node debug tool, what command do you use to continue the execution of your code.
 
