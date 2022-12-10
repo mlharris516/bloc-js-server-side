@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/mlharris516/bloc-js-server-side#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "skateboard": "^2.0.1"
   }
 }
